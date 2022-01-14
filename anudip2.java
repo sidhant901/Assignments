@@ -23,4 +23,20 @@ class anudip2
 	System.out.println("division of is ="+div);
 	System.out.println("modulus of is ="+mod);
 	}
-}	
+}
+
+
+/*
+output - 
+
+D:\AnudipJavaPrograms>java anudip2
+enter 1st no.
+12
+enter 2nd no.
+12
+addition is =24
+substraction is =0
+multiplication is =144
+division of is =1
+modulus of is =0.0
+*/	
