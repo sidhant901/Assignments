@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class relational_opt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n1,n2;
+		//boolean a=true,b=false;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter two numbers");
+        n1=sc.nextInt();
+        n2=sc.nextInt();
+        System.out.println("n1 is greater than n2 ="+(n1>n2));
+        System.out.println("n1 is less than n2 ="+(n1<n2));
+        System.out.println("n1 is greater than or equal to n2 ="+(n1>=n2));
+        System.out.println("n1 is less than or equal to n2 ="+(n1<=n2));
+        System.out.println("n1 is  equal to n2 ="+(n1==n2));
+	}
+
+}
+/*
+enter two numbers
+4 5
+n1 is greater than n2 =false
+n1 is less than n2 =true
+n1 is greater than or equal to n2 =false
+n1 is less than or equal to n2 =true
+n1 is  equal to n2 =false
+*/
