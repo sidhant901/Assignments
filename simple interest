@@ -1,0 +1,29 @@
+public class simple_interest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     double p,t,r,si;
+     System.out.println("enter principle of amount ");
+     Scanner sc=new Scanner(System.in);
+     p=sc.nextDouble();
+     System.out.println("\nenter rate ");
+     r=sc.nextDouble();
+     System.out.println("\nenter time  ");
+     t=sc.nextDouble();
+     si=(p*r*t)/100;
+     System.out.println("simple interest is = "+si);
+     
+	}
+
+}
+/*
+enter principle of amount 
+34000
+
+enter rate 
+30
+
+enter time  
+5
+simple interest is = 51000.0
+*/
