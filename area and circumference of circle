@@ -1,0 +1,24 @@
+import java.util.*;
+public class circle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       int r;
+      double pi=3.142,area,circume;
+       System.out.println("enter rasius");
+       Scanner sc=new Scanner(System.in);
+       r=sc.nextInt();
+       area=pi*r*r;
+       System.out.println( "area of circle is ="+area);
+       circume=2*pi*r;
+       System.out.println( "circumeference of circle is ="+circume);
+       
+	}
+
+}
+/*
+enter rasius
+5
+area of circle is =78.55
+circumeference of circle is =31.419999999999998
+*/
