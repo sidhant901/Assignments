@@ -1,0 +1,31 @@
+import java.util.*;
+
+
+
+   public class logical_opt {
+
+       	public static void main(String[] args) {
+       		// TODO Auto-generated method stub
+              int n1,n2,n3;
+              Scanner sc=new Scanner(System.in);
+              System.out.println("enter three numbers");
+              n1=sc.nextInt();
+              n2=sc.nextInt();
+              n3=sc.nextInt();
+              System.out.println("logical && operator ="+(n1==n2 && n1!=n3));
+              System.out.println("logical || operator ="+(n1==n2 || n1!=n3));
+              System.out.println("logical ! operator ="+(!(n1==n3)));
+              
+              
+       	}
+
+   }
+
+
+/*
+   enter three numbers
+   4 5 5
+   logical && operator =false
+   logical || operator =true
+   logical ! operator =true
+   */
