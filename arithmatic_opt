@@ -1,7 +1,7 @@
 import java.util.*;
 //import java.util.scanner;
 
-class anudip2
+class arihmatic_opt
 {
   public static void main(String[] args)
   {
