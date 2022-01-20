@@ -1,0 +1,128 @@
+import java.util.*;
+public class nested_condition_statement 
+{
+	public static void main(String [] args)
+	{
+   int ch,n1,n2,n3, n;;
+   char s;
+   
+    
+    
+   Scanner sc=new Scanner(System.in);
+   
+   System.out.println("\n 1.Even Odd\n 2.greater between three \n 3.check vowel \n 4.display day");
+   System.out.println("\n select your choice from above");
+   ch=sc.nextInt();
+   
+  
+	   
+   
+   switch(ch)
+   {
+   case 1:
+	System.out.println("enter number ");
+	n1=sc.nextInt();
+	if(n1%2==0)
+	{
+		System.out.println("number is even");
+	}
+	else
+	{
+		System.out.println("number is odd");
+		
+	}
+	break;
+	
+   case 2:
+	   System.out.println("enter three numbers ");
+	   n1=sc.nextInt();
+	   n2=sc.nextInt();
+	  n3=sc.nextInt();
+	   if (n1>n2 && n1>n3)
+	   {
+		   System.out.println("greater of three= "+n1);
+
+	   }
+	   else if(n2>n1 && n2>n3)
+	   {
+		   System.out.println("greater of three= "+n2);
+		   
+		   
+	   }
+	   else if(n3>n1 && n3>n2)
+	   {
+		   System.out.println("greater of three= "+n3);
+	   }
+	   else 
+	   {
+		   System.out.println("please enter integer number");
+	   }
+	   break;
+   case 3:
+	   
+	   System.out.println("enter character ");
+	   s=sc.next().charAt(0);
+	   if(s=='a'|| s=='e'|| s=='i'|| s=='o'|| s=='u')
+	   {
+		   System.out.println("it is vowel ="+s);
+	   }
+	   else
+	   {
+		   System.out.println("it is not vowel ="+s);
+	   }
+	   break;
+   case 4:
+	   
+	   System.out.println("enter number from 1 to 7");
+	   
+	   n =sc.nextInt();
+	   switch(n)
+	   {
+	   case 1:
+		   System.out.println("monday");
+		   break;
+	   case 2:
+		   System.out.println("tuesday");
+		   break;
+		   
+	   case 3:
+		   System.out.println("wednsday");
+		   break;
+	   case 4:
+		   System.out.println("thursday");
+		   break;
+	   case 5:
+		   System.out.println("friday");
+		   break;
+	   case 6:
+		   System.out.println("saturday");
+		   break;
+	   case 7:
+		   System.out.println("sunday");
+		   break;
+		   default:
+			   
+			   System.out.println("wrong number");
+			   break;
+		   
+	   }
+	   
+   }
+   
+	}
+}
+
+
+/*
+output -
+1.Even Odd
+ 2.greater between three 
+ 3.check vowel 
+ 4.display day
+
+ select your choice form above
+2
+enter three numbers 
+30 52 20
+greater of three= 52
+*/
