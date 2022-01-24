@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class greater_of_two {
+
+	public static void main(String[] args) 
+	{
+		int n1,n2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter two number ");
+		n1=sc.nextInt();
+		n2=sc.nextInt();
+		if(n1!=n2)
+		{
+			
+		
+		    if(n1>n2)
+		      {
+			    System.out.println("number one is gtreater than number two");
+		      }
+		    else
+		      {
+			    System.out.println("number two is gtreater than number one");
+		      }
+		}
+		else
+		{
+			System.out.println("two numbers are equal");
+		}
+			
+		}
+
+	}
+/*
+ enter two number 
+55 33
+number one is gtreater than number two
+*/
+ 
+
+
