@@ -1,0 +1,43 @@
+public class even_no 
+{
+
+	public static void main(String[] args)
+	{
+	   for(int i=1;i<=50;i++)
+	   {
+		   if(i%2==0)
+			   System.out.println(i +" "+ "number is even  ");
+		   
+		 }
+  }
+}
+
+/*
+ output =
+ 2 number is even  
+4 number is even  
+6 number is even  
+8 number is even  
+10 number is even  
+12 number is even  
+14 number is even  
+16 number is even  
+18 number is even  
+20 number is even  
+22 number is even  
+24 number is even  
+26 number is even  
+28 number is even  
+30 number is even  
+32 number is even  
+34 number is even  
+36 number is even  
+38 number is even  
+40 number is even  
+42 number is even  
+44 number is even  
+46 number is even  
+48 number is even  
+50 number is even  
+*/
+
