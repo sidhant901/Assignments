@@ -1,0 +1,27 @@
+import java.util.*;
+public class sum_first_last_digit {
+
+	public static void main(String[] args)
+	{
+		int n,last,first,sum;
+		System.out.println("enter number");
+		Scanner sc=new Scanner(System.in);
+		n=sc.nextInt();
+		last=n%10;
+        
+        while(n>=10)
+        {
+        	n/=10;
+        }
+        first=n;
+        sum=first+last;
+        System.out.println("sum of first and last digit= "+sum);
+	}
+
+}
+/*
+output =
+enter number
+234
+sum of first and last digit= 6
+*/
