@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class calculator1 {
+
+	public static void main(String[] args)
+	{
+
+		int ch;
+		//double n1,n2;
+		Scanner sc=new Scanner(System.in);
+		do
+		{
+		System.out.println("1. Adition \n 2. Substraction \n 3. Multiplication \n 4. Division \n 5. Modulus \n 6. exit ");
+		System.out.println("Enter operation no.which you preform from above");
+		ch=sc.nextInt();
+		switch(ch)
+		{
+		case 1:
+			calculate.add();
+			break;
+		case 2:
+			calculate.sub();
+			break;
+		case 3:
+			calculate.mul();
+			break;
+		case 4:
+			calculate.div();
+			break;
+		case 5:
+			calculate.mod();
+			break;
+		case 6:
+			System.out.println("Thank you for using calculator");
+			break;
+		default:
+			System.out.println("you are entered wrong number");
+			
+		 
+		}
+		}while(ch!=6);
+
+	}
+
+}
