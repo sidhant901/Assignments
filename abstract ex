@@ -1,0 +1,51 @@
+package oopsPrograms;
+
+
+abstract class student
+{
+	String name;
+	public student(String name)
+	{
+		
+		this.name=name;
+	}
+	/*public void student()
+	{
+		
+
+	}*/
+	abstract void display();
+	
+}
+class user extends student
+{
+
+	public user(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void display() 
+	{
+		System.out.println("user class display "+name);
+		
+	}
+	
+}
+public class abstract_example {
+
+	public static void main(String[] args)
+	{
+		user obj=new user("sidhant");
+		obj.display();
+		//obj.method();
+		
+
+	}
+
+}
+/*
+ * output -
+ * user class display sidhant
+*/
