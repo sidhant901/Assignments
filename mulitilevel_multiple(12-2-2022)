@@ -1,0 +1,66 @@
+package oopsPrograms;
+
+
+
+interface a
+{
+	void a();
+}
+interface b extends a
+{
+	void b();
+}
+interface c extends b
+{
+	void c();
+}
+ class d implements b,c
+{
+
+	@Override
+	public void a()
+	{
+		System.out.println("this is interface a");
+		
+	}
+
+	@Override
+	public void c() 
+	{
+		System.out.println("this is interface c");
+		
+	}
+
+	@Override
+	public void b()
+	{
+		System.out.println("this is interface b");
+		
+	}
+	public void d()
+	{
+		System.out.println("this is class d");
+	}
+	
+}
+public class mulitilevel_multiple {
+
+	public static void main(String[] args)
+	{
+		d d1=new d();
+		d1.a();
+		d1.b();
+		d1.c();
+		d1.d();
+
+
+	}
+
+}
+/*
+output -
+this is interface a
+this is interface b
+this is interface c
+this is class d
+*/
