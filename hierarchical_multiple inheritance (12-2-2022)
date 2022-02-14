@@ -1,0 +1,67 @@
+package inheritance_program;
+
+interface A
+{
+	void parent();
+	
+}
+interface B extends A
+{
+	 void child1();
+	
+}
+ interface C extends A
+{
+	 void child2();
+	
+	 
+	
+}
+class D implements B,C
+
+{
+	void child3()
+	{
+	System.out.println("this is D class");
+	}
+	public void child2()
+	{
+		System.out.println("this is interface 2");
+	}
+	@Override
+	public
+	void child1() 
+	{
+		System.out.println("this is interface 1 ");
+		
+	}
+	@Override
+	public void parent()
+	{
+		System.out.println("this is parent interface ");
+		
+	}
+}
+
+public class hierarchical_multiple {
+
+	public static void main(String[] args) 
+	{
+		D d1=new D();
+		
+		d1.child2();
+		d1.parent();
+		d1.child1();
+		d1.child3();
+		
+
+	}
+
+}
+/*
+ * output- 
+ * this is interface 2
+this is parent interface 
+this is interface 1 
+this is D class
+*/
