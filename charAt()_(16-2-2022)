@@ -1,0 +1,16 @@
+
+public class CharAt_fun {
+
+	public static void main(String[] args)
+	{
+		String s="sidhant jadhav";
+		char n=s.charAt(5);
+		System.out.println(n);
+
+	}
+
+}
+/*
+output -
+n
+*/
