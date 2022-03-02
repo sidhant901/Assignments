@@ -1,0 +1,19 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class revSorting {
+
+	public static void main(String[] args)
+	{
+		Integer[] n=new Integer[] {2,33,34,67,54};
+		Arrays.sort(n,Collections.reverseOrder());
+		System.out.println(Arrays.toString(n));
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+output-
+[67, 54, 34, 33, 2]
+*/
