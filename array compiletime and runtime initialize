@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class ArrayEx {
+
+	public static void main(String[] args)
+	{
+		//complie time array initialization
+		System.out.println("\n compile time array inialization");
+		int arr[]= {1,2,3,4,5};
+		int arr1[]=new int[5];
+		arr1[0]=6;
+		arr1[1]=7;
+		arr1[2]=8;
+		arr1[3]=9;
+		arr1[4]=10;
+		for(int i=0;i<5;i++)
+		{
+			System.out.println(arr[i]);
+		}
+		for(int i:arr1)
+		{
+			
+			System.out.println(i);
+		}
+		//runtime array inilization
+		System.out.println("\n now runtime array inialization");
+		int a[];
+		System.out.println("ENTER ARRAY SIZE");
+		Scanner sc=new Scanner(System.in);
+		int s=sc.nextInt();
+		a=new int[s];
+		System.out.println("enter "+s+" elements in array");
+		for(int i=0;i<s;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		System.out.println("you entered elements is");
+		for(int i=0;i<s;i++)
+		{
+			System.out.println(a[i]);
+		}
+
+	}
+
+}
+/*
+ * output -
+ *  compile time array inialization
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+ now runtime array inialization
+ENTER ARRAY SIZE
+5
+enter 5 elements in array
+11 22 3 44 55
+you entered elements is
+11
+22
+3
+44
+55
+*/
