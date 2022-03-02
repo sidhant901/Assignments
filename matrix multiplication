@@ -1,0 +1,95 @@
+
+import java.util.Scanner;
+
+public class MtrixMultiplication {
+
+	public static void main(String[] args) 
+	{
+		int i,j,k,sum;
+		Scanner sc=new Scanner(System.in);
+		int first[][]=new int[2][2];
+		int second[][]=new int[2][2];
+		int result[][]=new int[2][2];
+		System.out.println("enter"+2+"x"+2+"value in first array");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				first[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println("enter"+2+"x"+2+"value in second array");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				second[i][j]=sc.nextInt();
+			}
+		}
+		System.out.println(2+"x"+2+"element of first array");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				System.out.print(first[i][j]+"   ");
+			}
+			System.out.println();
+		}
+		System.out.println(2+"x"+2+"element of second array");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				System.out.print(second[i][j]+"   ");
+			}
+			System.out.println();
+		}
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				sum=0;
+				for(k=0;k<2;k++)
+				{
+					sum+=first[i][j]*second[i][j];
+				}
+				result[i][j]=sum;
+			}
+			
+		}
+		System.out.println("after multiplication of two array");
+		for(i=0;i<2;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				System.out.print(result[i][j]+"   ");
+			}
+			System.out.println();
+		}
+		 
+
+	}
+
+}
+/*
+ * output-
+ * enter2x2value in first array
+2
+2
+4
+4
+enter2x2value in second array
+3
+3
+5
+5
+2x2element of first array
+2   2   
+4   4   
+2x2element of second array
+3   3   
+5   5   
+after multiplication of two array
+12   12   
+40   40   
+*/
