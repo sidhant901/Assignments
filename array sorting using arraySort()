@@ -1,0 +1,18 @@
+import java.util.Arrays;
+
+public class sorting {
+
+	public static void main(String[] args) 
+	{
+		Integer[] n=new Integer[] {84,74,34,2,45,22,44};
+		Arrays.sort(n);
+		System.out.println(Arrays.toString(n));
+		// TODO Auto-generated method stub
+
+	}
+
+}
+/*
+output -
+[2, 22, 34, 44, 45, 74, 84]
+*/
