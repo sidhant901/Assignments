@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class MaximumMinimum
+{
+	
+	  
+		
+	
+
+	public static void main(String[] args)
+	{
+		int a[];
+		System.out.println("ENTER ARRAY SIZE");
+		Scanner sc=new Scanner(System.in);
+		int temp;
+		int s=sc.nextInt();
+		a=new int[s];
+		System.out.println("enter "+s+" elements in array");
+		for(int i=0;i<s;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i<s;i++)
+		{
+			for(int j=i+1;j<s;j++)
+			{
+				if(a[i]>a[j])
+				{
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;;
+				}
+			}
+		}
+		
+		System.out.println("minimum="+a[0]);
+		System.out.println("maximum="+a[s-1]);
+		
+		
+
+	}
+
+}
+/*
+ENTER ARRAY SIZE
+5
+enter 5 elements in array
+33
+55
+22
+44
+66
+minimum=22
+maximum=66
+*/
