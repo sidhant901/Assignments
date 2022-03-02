@@ -1,0 +1,60 @@
+
+class employee
+{
+	int emp_id,mob;
+	String name,addr,state,country;
+	public employee(int emp_id,String name)
+	{
+		this.emp_id=emp_id;
+		this.name=name;
+		
+	}
+	public employee(int emp_id,String name,String addr)
+	{
+		this(emp_id,name);
+		this.addr=addr;
+		
+	}
+	public employee(int emp_id,String name,String addr,String state,String country)
+	{
+		this(emp_id,name,addr);
+		this.state=state;
+		this.country=country;
+	}
+	public int getId()
+	{
+		return emp_id;
+	}
+	public String getname()
+	{
+		return name;
+	}
+	public String getaddr()
+	{
+		return addr ;
+	}
+	public String getstate()
+	{
+		return state;
+	}
+	public String getcountry()
+	{
+		return country;
+	}
+	
+}
+public class constructor_overloading {
+
+	public static void main(String[] args) 
+	{
+		employee e1=new employee(1000,"sidhant jadhav","kolhapur","maharashtra","India");
+		System.out.println(e1.getId() +" "+e1.getname()+" "+e1.getaddr()+" "+e1.getstate()+" "+e1.getcountry());
+
+	}
+
+}
+
+
+/*
+output -
+1000 sidhant jadhav kolhapur maharashtra India
