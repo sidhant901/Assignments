@@ -1,0 +1,59 @@
+abstract class abc
+{
+	abstract void getInterestRate();
+}
+class city extends abc
+{
+
+	@Override
+	void getInterestRate()
+	{
+		System.out.println("2%");
+		
+	}
+	
+}
+abstract class shape
+{
+	abstract void draw();
+	
+}
+class rectangle extends shape
+{
+
+	@Override
+	void draw() 
+	{
+		System.out.println("DRAW RECTANGLE");
+		
+	}
+	
+}
+class circle extends shape
+{
+
+	@Override
+	void draw() 
+	{
+		System.out.println("DRAW CIRCLE");
+		
+	}
+	
+}
+
+public class abstract_example2 {
+
+	public static void main(String[] args) 
+	{
+		circle a=new circle();
+		a.draw();
+		city b=new city();
+		b.getInterestRate();
+
+	}
+
+}
+/*
+ * output -
+ *  DRAW CIRCLE
+2%*/
